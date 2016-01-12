@@ -36,10 +36,12 @@ public class RosalindMPRT {
 
                 Pattern pattern = Pattern.compile("N[^P](S|T)[^P]");
                 Matcher matcher = pattern.matcher(allText);
-
+                
+                System.out.println(proteinID);
                 while (matcher.find()) {
-                    System.out.println(matcher.start());
+                    System.out.println(matcher.start() + 1 + " ");
                 }
+                System.out.println();
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             } catch (IOException e) {
